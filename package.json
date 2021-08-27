@@ -1,0 +1,65 @@
+{
+    "name": "browser-observer",
+    "version": "1.0.0",
+    "description": "A configurable extension that enables easy editing of cookies, session data and more",
+    "main": "index.js",
+    "scripts": {
+        "watch": "webpack --config webpack/webpack.dev.js --watch",
+        "build": "webpack --config webpack/webpack.prod.js",
+        "build:release": "yarn build && yarn clean:release && ncp dist release",
+        "clean": "rimraf dist",
+        "clean:release": "rimraf release",
+        "clean:all": "yarn clean && yarn clean:release",
+        "test": "yarn jest",
+        "style": "prettier --write \"src/**/*.{ts,tsx}\""
+    },
+    "author": "Eric Yan",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/eqfy/browser-observer"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "singleQuote": true,
+        "trailingComma": "es5"
+    },
+    "dependencies": {
+        "@material-ui/core": "^4.11.3",
+        "@material-ui/icons": "^4.11.2",
+        "@reduxjs/toolkit": "^1.5.1",
+        "jwt-decode": "^3.1.2",
+        "lodash": "^4.17.21",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "react-json-view": "^1.21.3",
+        "react-redux": "^7.2.4",
+        "redux-logger": "^3.0.6"
+    },
+    "devDependencies": {
+        "@types/chrome": "0.0.100",
+        "@types/jest": "^25.1.4",
+        "@types/jquery": "^3.3.33",
+        "@types/lodash": "^4.14.168",
+        "@types/react": "^17.0.0",
+        "@types/react-dom": "^17.0.0",
+        "@types/redux-logger": "^3.0.8",
+        "copy-webpack-plugin": "^8.1.1",
+        "css-loader": "^5.2.4",
+        "glob": "^7.1.6",
+        "jest": "^26.6.3",
+        "less": "^4.1.1",
+        "less-loader": "^8.1.1",
+        "ncp": "^2.0.0",
+        "prettier": "^2.2.1",
+        "rimraf": "^3.0.2",
+        "style-loader": "^2.0.0",
+        "ts-jest": "^25.2.1 ",
+        "ts-loader": "^6.2.1",
+        "typescript": "~3.8.3 ",
+        "webextension-polyfill-ts": "^0.25.0",
+        "webpack": "^5.35.0",
+        "webpack-cli": "~4.6.0",
+        "webpack-merge": "~4.2.2"
+    }
+}

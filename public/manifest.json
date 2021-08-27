@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+
+    "name": "Browser Observer",
+    "description": "A configurable extension that enables easy editing of cookies, session data and more",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "cookie.png",
+        "default_popup": "popup.html"
+    },
+
+    "icons": {
+        "128": "cookie.png"
+    },
+
+    "background": {
+        "scripts": ["js/vendor.js", "js/background.js"]
+    },
+
+    "permissions": ["storage", "tabs", "cookies", "<all_urls>"],
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{f70b190b-0b09-b142-af92-4d6438ca8005}"
+        }
+    }
+}
