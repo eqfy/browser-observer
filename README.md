@@ -3,7 +3,7 @@
 Browser Observer is a configurable extension that enables easy viewing, editing of cookies, session data and more
 
 ## Usage
-*Since the extension is a personal development tool that isn't uploaded to browswer webstores, it is unfortunately not possible to use the packaged extension as browsers will block it. Instead, you must set your browser to development mode in order to load the extension. Once loaded, the extension should remain in the browser.*
+*Since the extension is a personal development tool that isn't uploaded to browser webstores, it is unfortunately not possible to use the packaged extension as browsers will block it. Instead, you must set your browser to development mode in order to load the extension. Once loaded, the extension should remain in the browser.*
 
 ### Chrome
 - Go to [chrome://extensions/](chrome://extensions/)
